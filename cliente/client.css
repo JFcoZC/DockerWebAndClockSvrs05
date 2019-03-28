@@ -1,0 +1,137 @@
+/**
+*Jose Francisco Zeron Cabrera
+*154678
+*
+*Stylesheet file.
+*
+*File that contents stykes that are used by the client when it loads the html file.
+*/
+body
+{
+	background-image:url('pared.jpg');
+	/*background-repeat: no-repeat;*/
+	background-size: cover; 
+}
+
+.clock
+{
+	
+	width: 300px;
+	height: 300px;
+	/*Round borders*/
+	border-radius: 50%;
+	background-color: black; 
+	background-image: url("Mickey2.png");
+	background-size: 300px 300px; 
+	margin: 40px auto 0px auto;
+	border: 20px solid white;
+}
+
+.centro
+{
+	position: relative;
+	background-color: yellow;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	top: calc(-58%);
+	left: calc(46.8%);
+	/*Stack order of element*/
+	z-index: 20;
+}
+
+.horaHandler
+{
+	width: 10pX;
+	height: 75px;
+	background-color: white;
+	transform-origin: bottom center;
+	border-radius: 6px;
+	border: 2px solid black;
+	position: relative;
+	top: 75px;
+	left: 145px;
+	z-index: 10;
+	/*Transition speed*/
+	transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+	/*Angulo*/
+	transform: rotate(360deg);
+}
+
+.minuteHandler
+{
+	width: 5pX;
+	height: 120px;
+	background-color: white;
+	transform-origin: bottom center;
+	border-radius: 4px;
+	border: 2px solid black;
+	position: relative;
+	top: -45px;
+	left: 147px;
+	z-index: 9;
+	transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    transform: rotate(90deg);
+}
+
+.secondHandler
+{
+	width: 2pX;
+	height: 120px;
+	background-color: red;
+	transform-origin: bottom center;
+	border-radius: 4px;
+	position: relative;
+	bottom: 165px;
+	left: 149px;
+	z-index: 8;
+	transition: all 0.06s;
+	transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    transform: rotate(90deg);
+}
+
+.tiempo
+{
+    position: relative;
+    top: -66%;
+    left: 10%;
+    border: 1px solid #fff8dc;
+    background-color: white;
+    padding: 5px;
+    display: block;
+    box-shadow: inset 0px 2px 5px rgba(0,0,0,.4);
+    border-radius: 5px;
+    width: 75px;
+    height: 15px;
+
+}
+
+.fecha
+{
+    position: relative;
+    top: -75%;
+    left: 62%;
+    border: 1px solid #fff8dc;
+    background-color: white;
+    padding: 5px;
+    display: block;
+    box-shadow: inset 0px 2px 5px rgba(0,0,0,.4);
+    border-radius: 5px;
+    width: 75px;
+    height: 15px;
+
+}
+
+.tiempo small{
+    color:red;
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+h1 
+{
+	position: relative;
+	text-align: center;
+	color:white;
+
+}

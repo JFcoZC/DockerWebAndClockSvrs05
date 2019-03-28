@@ -1,0 +1,18 @@
+#Compose that defines 2 services: WEB and CLOCK service
+version: '3'
+services:
+  #----- SERVICE 1 ------
+  web:
+    #To build this service use image from dockerfile in directory cliente
+    build: ./cliente
+    #PortExposedContainer:PortHostMachine
+    ports:
+      - '80:80'
+  #---- SERVICE 2 ------      
+  clock:
+    #To build this service use image from dockerfile in directory cliente
+    build: ./servidor
+    #PortExposedContainer:PortHostMachine
+    ports:
+      - '3000:3000'
+#END OF ALL THE SERVICES
