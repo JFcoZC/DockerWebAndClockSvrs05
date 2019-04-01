@@ -17,8 +17,8 @@ RUN npm install express@4.16.0 --save
 #Instalar cors library requerida por node
 RUN npm install cors
 
-#Set the default comand for the container as. 'node server.js'
-CMD ["node", "server.js"]
-
 #Epose port 3000
 EXPOSE 3000
+
+#Set the default comand for the container as. 'node server.js'
+CMD ["node", "server.js"]

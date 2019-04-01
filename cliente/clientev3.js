@@ -47,7 +47,7 @@ function cargarHoraCliente()
 function obtenerHoraMiServidor()
 {
 	$.ajax({
-		url: 'http://127.0.0.1:3000/serverTime',
+		url: 'http://192.168.99.100:3000/serverTime',
 		type: 'GET',
 		dataType:"json",
 		contentType:"application/json",

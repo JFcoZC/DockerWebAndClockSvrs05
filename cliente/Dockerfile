@@ -15,6 +15,10 @@ COPY ./cliente.html /var/www/html/
 COPY ./clientev3.js /var/www/html/
 COPY ./Mickey2.png /var/www/html/
 COPY ./pared.jpg /var/www/html/
+
+#Epose port 80
+EXPOSE 80
+
 #Set the default comand for the container as. 'apache2ctl -D FOREGROUND'
 #which means to left running the apache2 daemon listening at the background
 CMD ["apache2ctl", "-D", "FOREGROUND"]
